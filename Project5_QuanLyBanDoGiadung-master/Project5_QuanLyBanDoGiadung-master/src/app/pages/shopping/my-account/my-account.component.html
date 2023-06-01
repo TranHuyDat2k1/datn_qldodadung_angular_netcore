@@ -1,0 +1,182 @@
+my-account.component.html
+<!-- ...:::: Start Breadcrumb Section:::... -->
+<div class="breadcrumb-section breadcrumb-bg-color--golden">
+    <div class="breadcrumb-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="breadcrumb-title">Tài khoản của tôi</h3>
+                    <div class="breadcrumb-nav breadcrumb-nav-color--black breadcrumb-nav-hover-color--golden">
+                        <nav aria-label="breadcrumb">
+                            <ul>
+                                <li><a href="index.html">Trang chủ</a></li>
+                                <li><a href="shop-grid-sidebar-left.html">Cửa hàng </a></li>
+                                <li class="active" aria-current="page">Tài khoản của tôi </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ...:::: End Breadcrumb Section:::... -->
+
+<!-- ...:::: Start Account Dashboard Section:::... -->
+<div class="account-dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-lg-3">
+                <!-- Nav tabs -->
+                <div class="dashboard_tab_button" data-aos="fade-up" data-aos-delay="0">
+                    <ul role="tablist" class="nav flex-column dashboard-list">
+                        <li><a href="#dashboard" data-bs-toggle="tab" class="nav-link btn btn-block btn-md btn-black-default-hover active">Bảng điều khiển  </a></li>
+                        <li> <a href="#orders" data-bs-toggle="tab" class="nav-link btn btn-block btn-md btn-black-default-hover">Đơn đặt hàng </a></li>
+                        <li><a href="#downloads" data-bs-toggle="tab" class="nav-link btn btn-block btn-md btn-black-default-hover">Tải xuống </a></li>
+                        <li><a href="#address" data-bs-toggle="tab" class="nav-link btn btn-block btn-md btn-black-default-hover">Địa chỉ</a></li>
+                        <li><a href="#account-details" data-bs-toggle="tab" class="nav-link btn btn-block btn-md btn-black-default-hover">Chi tiết tài khoản </a></li>
+                        <li><a href="" class="nav-link btn btn-block btn-md btn-black-default-hover">Đăng xuất</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-9 col-lg-9">
+                <!-- Tab panes -->
+                <div class="tab-content dashboard_content" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tab-pane fade show active" id="dashboard">
+                        <h4>Tài khoản của tôi </h4>
+                        <p>Từ bảng điều khiển tài khoản của bạn. bạn có thể dễ dàng kiểm tra &amp; xem của bạn <a href="#">những đơn đặt hàng gần đây</a>, quản lý của bạn <a href="#">địa chỉ giao hàng và thanh toán</a> và <a href="#">Chỉnh sửa mật khẩu và chi tiết tài khoản của bạn.</a></p>
+                    </div>
+                    <div class="tab-pane fade" id="orders">
+                        <h4>Đơn đặt hàng </h4>
+                        <div class="table_page table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Số TT</th>
+                                        <th>Ngày tháng</th>
+                                        <th>Trạng thái </th>
+                                        <th>Tổng cộng</th>
+                                        <th>Hành động </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>10 tháng 12 năm 2022</td>
+                                        <td><span class="success">Hoàn thành</span></td>
+                                        <td>250,000 cho 1 mặt hàng </td>
+                                        <td><a href="#" class="view">Lượt xem </a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>11 tháng 12 năm 2022</td>
+                                        <td>Xử lý</td>
+                                        <td>170,000 cho 1 mặt hàng</td>
+                                        <td><a href="#" class="view">Lượt xem </a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="downloads">
+                        <h4>Tải xuống</h4>
+                        <div class="table_page table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Sản phẩm </th>
+                                        <th>Tải xuống</th>
+                                        <th>Hết hạn</th>
+                                        <th>tải xuống</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Shopnovilla - Mẫu PSD Bất Động Sản Miễn Phí</td>
+                                        <td>10 tháng 12 năm 2022</td>
+                                        <td><span class="danger">Hết hạn</span></td>
+                                        <td><a href="#" class="view">Tải xuống tệp tin</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Không Phải Trả Tiền - Mẫu Html Thương Mại Điện Tử</td>
+                                        <td>11 tháng 12 năm 2022</td>
+                                        <td>Không </td>
+                                        <td><a href="#" class="view">Tải xuống tệp tin</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="address">
+                        <p>Các địa chỉ sau sẽ được sử dụng trên trang thanh toán.</p>
+                        <h5 class="billing-address">Địa Chỉ Thanh Toán</h5>
+                        <a href="#" class="view">Chỉnh sửa</a>
+                        <p><strong>Bobby Jackson</strong></p>
+                        <address>
+                            House #15<br>
+                                Road #1<br>
+                                Block #C <br>
+                                Banasree <br>
+                                Dhaka <br>
+                                1212
+                        </address>
+                        <p>Bangladesh</p>
+                    </div>
+                    <div class="tab-pane fade" id="account-details">
+                        <h3>Chi tiết tài khoản </h3>
+                        <div class="login">
+                            <div class="login_form_container">
+                                <div class="account_login_form">
+                                    <form action="#">
+                                        <p>Bạn co săn san để tạo một tai khoản? <a href="#">Thay vào đó hãy đăng nhập!</a></p>
+                                        <div class="input-radio">
+                                            <span class="custom-radio"><input type="radio" value="1" name="id_gender"> Ông.</span>
+                                            <span class="custom-radio"><input type="radio" value="1" name="id_gender"> Bà.</span>
+                                        </div> <br>
+                                        <div class="default-form-box mb-20">
+                                            <label>Họ</label>
+                                            <input type="text" name="first-name">
+                                        </div>
+                                        <div class="default-form-box mb-20">
+                                            <label>Tên</label>
+                                            <input type="text" name="last-name">
+                                        </div>
+                                        <div class="default-form-box mb-20">
+                                            <label>Email</label>
+                                            <input type="text" name="email-name">
+                                        </div>
+                                        <div class="default-form-box mb-20">
+                                            <label>Mật khẩu</label>
+                                            <input type="password" name="user-password">
+                                        </div>
+                                        <div class="default-form-box mb-20">
+                                            <label>Ngày sinh</label>
+                                            <input type="date" name="birthday">
+                                        </div>
+                                        <span class="example">
+                                              (VD: 05/31/1970)
+                                            </span>
+                                        <br>
+                                        <label class="checkbox-default" for="offer">
+                                            <input type="checkbox" id="offer">
+                                            <span>Nhận Ưu Đãi Từ Các Đối Tác Của Chúng Tôi</span>
+                                        </label>
+                                        <br>
+                                        <label class="checkbox-default checkbox-default-more-text" for="newsletter">
+                                            <input type="checkbox" id="newsletter">
+                                            <span>Đăng Ký Nhận Bản Tin Của Chúng Tôi<br><em>Bạn Có Thể Hủy Đăng Ký Bất Cứ Lúc Nào. Vì Mục Đích Đó, Vui Lòng Tìm Thông Tin Liên Hệ Của Chúng Tôi Trong Thông Báo Pháp Lý..</em></span>
+                                        </label>
+                                        <div class="save_button mt-3">
+                                            <button class="btn btn-md btn-black-default-hover" type="submit">Lưu</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ...:::: End Account Dashboard Section:::... -->
